@@ -1,0 +1,26 @@
+h1{
+    text-align:center;
+}
+label{
+    font-size:20px;
+}
+#psw{
+    padding:10px;
+    margin:5px;
+    border-radius:5px;
+
+}
+#psww{
+    padding:10px;
+    margin:5px;
+    border-radius:5px;
+
+}
+
+#sub{
+    background-color:green;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    font-size:20px;
+}

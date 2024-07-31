@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+</head>
+<body>
+   <script>
+    let color1=prompt("enter color1");
+    let color2=prompt("enter color2");
+    switch(color1){
+        case "red":
+            switch(color2){
+                case "blue":
+                    console.log("purple");
+                    break;
+                case "yellow":
+                    console.log("orange");
+                    break;
+                default:
+                    console.log("Invalid color combination");
+            }
+            break;
+        case "blue":
+            switch(color2){
+                case "yellow":
+                    console.log("green");
+                    break;
+                default:
+                    console.log("Invalid color combination")
+            }
+            break;
+        default:
+            console.log("Invalid color combination");
+        
+    }
+   </script>
+</body>
+</html>

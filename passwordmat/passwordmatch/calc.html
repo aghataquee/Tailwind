@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let x,y,result,ch;
+        
+        x=parseInt(prompt("enter first num"));
+        ch=parseInt(prompt("enter the operator"));
+        y=parseInt(prompt("enter second num"));
+        switch(ch){
+            case 1:
+                result=x+y;
+                console.log("the addition of two number is",result);
+                break;
+            case 2:
+                result=x-y;
+                console.log("subtraction of two numbers is",result);
+                break;
+            case 3:
+                result=x*y;
+                console.log("Multiplication of two numbers is",result);
+                break;
+            case 4:
+                result=x%y;
+                console.log("Division of two numbers is ",result);
+                break;
+            default:
+                console.log("Invalid choice",ch);
+        }
+        
+    </script>
+</body>
+</html>

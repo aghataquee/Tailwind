@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+</head>
+<body>
+    <script>
+        var color1=prompt("enter your first color");
+        var color2=prompt("enter your second color");
+        switch(color1 && color2){
+            case "red" && "blue":
+                console.log("mixture of red and blue is purple");
+                break;
+            case "red" && "yellow" || "yellow" && "red":
+                console.log("mixture of red and yellow is orange");
+                break;
+            case "blue" && "yellow" || "yellow" && "blue":
+                console.log("mixture of blue and yellow is green");
+                break;
+            default:
+                console.log("invalid color combination");
+        }
+    </script>
+</body>
+</html>

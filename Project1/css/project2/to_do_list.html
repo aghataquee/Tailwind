@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <style>
+        h1{
+            text-align:center;
+            color:blue;
+            font-size:40px;
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #todocontainer{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div class="container">
+        <input type="text" id="fieldinput"><button id="btn">Add items</button>
+    </div>
+    <div id="todocontainer"></div>
+    <script>
+        let btnn=document.getElementById("btn");
+        let field=document.getElementById("fieldinput");
+        let cont=document.getElementById("todocontainer");
+        btnn.addEventListener("click", function(){
+            var paragraph=document.createElement('p');
+            paragraph.innerText=field.value;
+            cont.appendChild(paragraph);
+        })
+    </script>
+</body>
+</html>

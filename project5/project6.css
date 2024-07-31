@@ -1,0 +1,32 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+h1{
+    position:relative;
+    left:160px;
+}
+#one{
+    position:relative;
+    top:40px;
+    right:18px;
+}
+#zero{
+    position:relative;
+    top:40px;
+    right:17px;
+}
+#two{
+    position:relative;
+    top:40px;
+    right:15px;
+}
+#third{
+    position:relative;
+    top:63px;
+    right:160px;
+}

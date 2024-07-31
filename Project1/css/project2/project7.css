@@ -1,0 +1,39 @@
+input{
+    width:100px;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+input[type=submit]{
+    background-color:#04AA6D;
+    color:white;
+}
+.container{
+    background-color:#f1f1f1;
+    padding:20px;
+    
+}
+
+#message p{
+    padding:10px 35px;
+    font-size:15px;
+     
+}
+.valid{
+    color:green;
+}
+.valid:before{
+    position:relative;
+    left:-35px;
+    content:"&#100066;";
+}
+.invalid{
+    color:green;
+}
+.invalid:before{
+    position:relative;
+    left:-35px;
+    content:"&#100066;";
+}

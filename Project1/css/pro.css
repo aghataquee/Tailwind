@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background-color:aqua;
+}
+nav{
+    padding:10px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+div img{
+    float:left;
+    
+}
+nav ul{
+    display:flex;
+    list-style: none;
+    gap:30px;
+    color: blue;
+    position:relative;
+    right:300px;
+}
+
+nav button{
+    padding:8px;
+    border-radius:5px;
+    font-size:15px;
+    font-weight:200px;
+    position:relative;
+    left:350px;
+    background-color: blue;
+    color:white;
+    border:0;
+}
+button:hover{
+    background-color:orange;
+    color:green
+}

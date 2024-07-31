@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice with javascript</title>
+</head>
+<body>
+    <script>
+        //we can print any numbers without passing parameters using reserved keyword arguments
+        /*function myarray(){
+            console.log(arguments);
+        }
+        myarray(1,2,3);*/
+        // to concatenate two array in single array
+        /*const onearray=[1,2,3,4];
+        const twoarray=[5,6,7,8];
+        //using spred method
+        const threearray=[...onearray,...twoarray];
+        //const threearray=onearray.concat(twoarray);
+        console.log(threearray);*/
+        function sprd(){
+            let st=Array.from(arguments);
+            let final_arr=st.map(e=>e);
+            console.log(final_arr);
+        }
+        function sprd1(...args){
+            let final_arr=args.map(l=>l);
+            console.log(final_arr);
+        }
+        sprd1(1,2,3,4);
+        const name=["taquee","tena","coder"];
+        const nwname=["india",...name,"bihar"];
+        console.log(nwname);
+        const nw="taquee";
+        console.log([...nw]);
+        // REST means that it will pack all the arguments in the form of array
+        function ind(...values){
+            return values;
+        }
+        console.log(ind(1,2,3,4));
+        console.log(ind("java","javascript"));
+        //SET it allows only unique value no duplicates are allowed;
+        let array=[1,2,3,2,3];
+        let st=new Set(array);
+        console.log(st);
+        st.add(7);
+        console.log(st);
+        console.log(st.has(9));
+        st.clear();
+        console.log(st);
+        //SET DIFFERENCE
+        function setdiff(setA,setB){
+            return new Set([...setA].filter(el=>!B.has(el)));
+        }
+        console.log(setdiff((1,2,3,4),(2,3)));
+
+       
+        
+
+
+    </script>
+</body>
+</html>

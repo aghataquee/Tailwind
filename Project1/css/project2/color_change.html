@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the color on click</title>
+    <style>
+        #cc{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding:10px;
+            margin:10px;
+            background-color:aqua;
+            position:relative;
+            left:500px;
+            top:100px;
+            font-size:30px;
+            border-radius:5px;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="cc" onclick="change_color()">color change</button>
+    <script>
+        function color_changer(){
+            let color_comb="0123456789ABCDEF";
+            let cons="#";
+            for(let i=0;i<6;i++){
+                cons+=color_comb[Math.floor(Math.random()*16)];
+                
+            }
+            return cons;
+        }
+        function change_color(){
+            document.body.style.backgroundColor=color_changer();
+        }
+    </script>
+</body>
+</html>

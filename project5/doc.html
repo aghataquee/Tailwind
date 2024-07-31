@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document javascript</title>
+</head>
+<body>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <p id="js"></p>
+    
+    <button onclick="hey()" id="ind">submit</button>
+    <script>
+        //create
+         let title=document.createElement("h1");
+        title.className="ta";
+        title.style.fontsize="25px";
+        title.textContent="taquee";
+        document.body.appendChild(title);
+         //removing
+        const ul=document.querySelector("ul");
+        console.log(ul);
+        const lists=document.querySelectorAll("li");
+        console.log(lists);
+        for(list of lists){
+            ul.removeChild(list);
+        }
+        document.addEventListener("mouseenter",hello);
+        function hello(){
+            document.getElementbyId("js").innerText="tena"
+        }
+        function hey() {
+            document.getElementById("ind").innerText= "TENA";
+            document.getElementById("ind").style.color= "red";
+            document.getElementById("ind").style.backgroundColor= "black";
+            document.getElementById("ind").style.padding= "10px";
+            document.getElementById("ind").style.border= "2px solid yellow";
+
+       
+      }
+       /* function myvil(){
+            document.getElementbyId("ind").innerText= "TENA";
+            document.getElementById("ind").style.color= "red";
+            document.getElementById("ind").style.backgroundColor= "black";
+            document.getElementbyId("ind").style.padding= "10px";
+            document.getElementById("ind").style.border= "2px solid yellow";
+        }*/
+    </script>
+</body>
+</html>

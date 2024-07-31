@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight txt having length greater than 8</title>
+    <style>
+        .highlight{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="pw"> The most affordable and the best learning platform is physicswallah</p>
+    <script>
+        function highlight_txt(){
+            const txt=document.getElementById("pw").innerText;
+            let output="";
+            let words=txt.split(" ");
+            let size=8;
+            let replacement="";
+            for(let i=0;i<words.length;i++){
+                let word=words[i];
+                if(word.length>=8){
+                    replacement="<span class='highlight'>" + word +"</span>";
+                }
+                else{
+                    replacement=word;
+                }
+                output=output + " " + replacement + " ";
+            }
+            return output;
+        }
+        document.getElementById("pw").innerHTML=highlight_txt();
+    </script>
+</body>
+</html>

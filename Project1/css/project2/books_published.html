@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Published after 2010</title>
+</head>
+<body>
+    <script>
+        let arr=[{book_name:"what young india wants",writers_name:"Dr APJ",year:2011},
+    {book_name:"the discovery of india",writers_name:"pt nehru",year:1955},
+{book_name:"india in 2020",writers_name:"chetan bhagat",year:2019}];
+let nwarr=arr.filter(function(n){
+    return n.year>2010;
+})
+console.log(nwarr);
+    </script>
+</body>
+</html>

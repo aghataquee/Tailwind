@@ -1,0 +1,207 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    background-color:black
+
+}
+header ul{
+    display:flex;
+    float:right;
+    gap:20px;
+    list-style:none;
+    color:white;
+    font-size:20px;
+}
+header ul li button {
+    background-color:blue;
+    color:white;
+    margin:5px;
+    border:0px;
+    border-radius:5px;
+}
+.header{
+    padding:20px;
+    margin:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.rightheader{
+    position:relative;
+    left:200px;
+}
+.leftheader{
+    position:relative;
+    left:190px;
+    
+
+}
+.leftheader h2{
+    position:relative;
+    left:15px;
+    bottom:18px;
+    font-size:15px;
+    color:white;
+}
+.leftheader h1{
+    position:relative;
+    bottom:20px;
+    font-size:30px;
+    color:white;
+}
+.leftheader h4{
+    position:relative;
+    bottom:20px;
+    left:2px;
+    font-size:15px;
+    color:yellow;
+}
+main h1{
+    text-align:center;
+    position:relative;
+    left:20px;
+    bottom:40px;
+    font-size:20px;
+    color:white;
+
+} 
+.main div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+.project1 img{
+    position:relative;
+    right:20px;
+    bottom:40px;
+}
+.project1 p{
+    position:relative;
+    right:93px;
+    top:25px;
+    color:white;
+}
+.project2 img{
+    position:relative;
+    left:104px;
+    bottom:158px;
+}
+.project2 p{
+    position:relative;
+    left:24px;
+    bottom:95px;
+    color:white;
+}
+.project3 img{
+    position:relative;
+    bottom:145px;
+    right:20px;
+}
+.project3 p{
+    position:relative;
+    right:100px;
+    bottom:80px;
+    color:white;
+}
+.project4 img{
+    position:relative;
+    left:104px;
+    bottom:265px;
+}
+.project4 p{
+    position:relative;
+    left:20px;
+    bottom:200px;
+    color:white;
+}
+footer h2{
+    text-align:center;
+    position:relative;
+    bottom:240px;
+    color:white;
+    font-size:20px;
+}
+footer ul {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    list-style:none;
+    position:relative;
+    bottom:240px;
+    gap:10px;
+    font-size:20px;
+}
+@media screen and (max-width:576px){
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+        background-color:black;
+        border-radius:10px;
+    
+    }
+    header ul{
+        display:flex;
+        float:right;
+        list-style:none;
+        color:white;
+        font-size:10px;
+    }
+    header ul li{
+        font-size:10px;
+        position:relative;
+        right:0;
+    }
+    button {
+        background-color:blue;
+        color:white;
+        position:relative;
+        left:22px;
+        bottom:2px;
+        margin:5px;
+        border:0px;
+        font-size:10px;
+        border-radius:5px;
+    }
+    .header{
+        padding:20px;
+        margin:20px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .leftheader{
+        position:relative;
+        left:130px;
+        
+    
+    }
+    .leftheader h2{
+        position:relative;
+        left:15px;
+        bottom:18px;
+        font-size:15px;
+        color:white;
+    }
+    .leftheader h1{
+        position:relative;
+        bottom:20px;
+        font-size:20px;
+        color:white;
+    }
+    .leftheader h4{
+        position:relative;
+        bottom:20px;
+        left:2px;
+        font-size:15px;
+        color:yellow;
+    }
+    .rightheader{
+        position:relative;
+        left:130px;
+    }
+
+    
+}
